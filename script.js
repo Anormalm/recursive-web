@@ -15,6 +15,7 @@ const level2Sequence = ["Ω", "Ψ", "Φ", "Δ", "Σ"];
 let level2Progress = [];
 let level2Active = false;
 
+
 document.addEventListener("keydown", (e) => {
   const key = e.key.toLowerCase();
 
@@ -301,7 +302,7 @@ function completeLevel2() {
       <p style="text-align:center;">Press any key to start.</p>
     `;
   }, 5000);
-  document.addEventListener("keydown", startLevel3);
+  document.addEventListener("keydown", startLevel3, { once: true });
 }
 
 function shuffleArray(arr) {
@@ -314,6 +315,7 @@ function getRandomGlyphs(count) {
 }
 
 function startLevel3() {
+
   document.body.innerHTML = `
     <h1 id="title">LEVEL 3: THE ARCHIVE</h1>
     <p id="desc">A trace remains in the archive.</p >
@@ -326,7 +328,9 @@ function startLevel3() {
       </div>
     </div>
   `;
-
+        document.getElementById("terminal-input").style.flex = "1";
+document.getElementById("terminal-input").style.width = "100%";
+document.getElementById("terminal-input").style.fontSize = "1rem";
   const input = document.getElementById("terminal-input");
   const log = document.getElementById("terminal-log");
 
