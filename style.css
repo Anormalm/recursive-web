@@ -110,14 +110,16 @@ body {
   line-height: 1.3;
 }
 
-#terminal-input-line {
-  display: flex;
-  align-items: center;
-}
+
 
 .prompt {
   margin-right: 0.5rem;
   color: #0f0;
+}
+
+#terminal-input-line {
+  display: flex;
+  align-items: center;
 }
 
 #terminal-input {
