@@ -414,7 +414,7 @@ document.getElementById("terminal-input").style.fontSize = "1rem";
       } else if (command === "cat node3.txt") {
         response.innerHTML = `
           Encoded Timestamp:<br>
-          <code>00110010001100000011001000110101001100000011010000110011001100010011011100110000</code><br><br>
+          <code>001100100011000000110010001101010011000000110100001100000011001100110001001101110011001100110000</code><br><br>
           Hint: The street remembers the group chat. It's a part of history.
         `;
       } else if (["vim"].includes(command)) {
